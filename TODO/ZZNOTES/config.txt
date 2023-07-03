@@ -1,0 +1,12 @@
+configure file will contain the information about the connectinon which are always reqired for doing stuffs like DataBase connectinon and other things 
+
+in this Folder we will create a file called database.js and in this file we will do the things like::>
+1. import mongoose
+2. create function DBConnection()=which will connect the file
+       ==>const DBconnect=()=>{
+            mongoose.connect(process.env.DATABASE_URL,
+            {useNewUrlParser:true,
+            useUnifiedTopology:true,})
+    } here process is an object to use this we have to install .env from npm
+       ==>npm i .env
+       ==>require("dotenv").config(); after installing .env we write this code above function and this means that the data present in the .env file will automatically come inside the process object

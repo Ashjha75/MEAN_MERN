@@ -1,0 +1,11 @@
+1=> we create TODO app
+2=> npm init -y
+3=> npm i express
+4=>create folder like --
+    [a]=config=>it will contain the all configuration of database connection and other connectinon which areconnections..
+    [b]=contrllers=>it will contain the bussiness logic about the server works...
+    [c]=models=>it will containthe Schemas which eventually represents the  properties of logic
+    [d]=routes=>it will contain all the routes for the web 
+
+5=>create .env file which will contains thing like PORT and DATABASE_URL etc
+6=>

@@ -1,0 +1,5 @@
+this folder will contain the schema of our website 
+1. in this create a file called Todo.js
+
+===INSIDE TODO.JS===
+we will create the schema with the help of mongoose

@@ -1,0 +1,14 @@
+this file will use to controll the things orfor bussiness logic
+1. Create the createTodo.js app
+
+====INSIDE CREATETODO.JS====
+1. import the  models
+2. create and export createTodo function which will be asynchronous in nature so that it cannot jam/block the main thread
+3. export title and dexcription from req.body
+4. create a new Todo obj and insert in DB
+5. Send he Json response with success flag
+
+
+
+
+
