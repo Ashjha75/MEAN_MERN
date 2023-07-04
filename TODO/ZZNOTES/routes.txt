@@ -1,0 +1,9 @@
+Router is the part which is use to locate the api's
+
+1. Create the file called  todos.js in which:::>
+
+====INSIDE TODOS.JS====
+1.  import express 
+2.  import express.router()
+3.  import controller
+4.  define Api routes

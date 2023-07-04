@@ -9,7 +9,7 @@ const DBconnect = () => {
     .then(() => console.log("Successfull Connection with DATABASE"))
     .catch((err) => {
       console.log("Issue in Connection with DATABASE");
-      console.error.err.message;
+      console.error(err.message);
       process.exit(1);
     });
 };
