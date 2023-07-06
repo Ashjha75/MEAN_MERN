@@ -1,7 +1,6 @@
 const Post = require("../models/postModel");
 const Comment = require("../models/coomentModel");
 exports.createComment = async (req, res) => {
-  console.log(req.body);
   try {
     const { post, user, body } = req.body;
     const comment = new Comment({
@@ -27,9 +26,11 @@ exports.createComment = async (req, res) => {
   } catch (err) {
     res.status(500).json({
       success: false,
-      data: req.body,
-      message: "Issue whtile creating comments",
+      message: "Issue while creating comments",
       error: err.message,
     });
   }
 };
+
+
+
