@@ -8,8 +8,13 @@ require("dotenv").config();
 const PORT = process.env.PORT || 8080;
 
 server.use(express.json());
-server.use(fileUpload());
-server.use("api/v1/", uploadRoutes);
+server.use(
+  fileUpload({
+    useTempFiles: true,
+    tempFileDir: "/tmp/",
+  })
+);
+server.use("/api/v1/upload", uploadRoutes);
 
 dbConnect();
 cloud.cloudinaryConnect();
@@ -19,5 +24,7 @@ server.listen(PORT, () => {
 });
 
 server.get("/", (req, res) => {
-  res.send("<center><h1>Server is started successfully</h1></center>");
+  res.send(
+    "<center><h1>Server is started successfully</h1></center> <a href='' />"
+  );
 });
