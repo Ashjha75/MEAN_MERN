@@ -20,3 +20,4 @@ const mailSender = async (email, title, body) => {
     console.log("ERROR WHILE SENDING MAIL....");
   }
 };
+module.exports = mailSender;
