@@ -28,6 +28,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     enum: ["Admin", "Student", "Instructor"],
   },
+  token: {
+    type: String,
+  },
+  resetTokenExpires: { type: Date },
   additionalDetails: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
